@@ -1,4 +1,4 @@
-# onlineschool-auto-login
+# online-school-auto-login
 
 IMPORTANT!! If you do **NOT** want to turn your system off delete line 24 in school.bat
 
