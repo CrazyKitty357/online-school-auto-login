@@ -5,12 +5,14 @@
 
 :st
 title CrazyKitty school.bat
+
+IF NOT EXIST "config.bat" goto sources
+IF EXIST "config.bat" call "config.bat" goto run
+
 :sources
 set school=YOUR_SCHOOL_LOGIN_SITE_HERE
 set input=FILELOCATION_HERE\input.vbs
-
-IF NOT EXIST "config.bat" goto nosources
-IF EXIST "config.bat" call "config.bat" goto run
+goto run
 
 :run
 cd C:\Program Files\Google\Chrome\Application
